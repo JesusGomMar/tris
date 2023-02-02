@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class UsuarioDto {
 
-	private Long idUsuarios;
+	private Long idUsuario;
 	private String nombre;
 	private String apellidos;
 	private String mail;
@@ -13,12 +13,14 @@ public class UsuarioDto {
 	private Date fechaBaja;
 	private String login;
 	private String password;
+	private Long idRol;
+	private String nombreRol;
 	
 	public Long getIdUsuarios() {
-		return idUsuarios;
+		return idUsuario;
 	}
-	public void setIdUsuarios(Long idUsuarios) {
-		this.idUsuarios = idUsuarios;
+	public void setIdUsuarios(Long idUsuario) {
+		this.idUsuario = idUsuario;
 	}
 	public String getNombre() {
 		return nombre;
@@ -67,6 +69,18 @@ public class UsuarioDto {
 	}
 	public void setPassword(String password) {
 		this.password = password;
+	}
+	public Long getIdRol() {
+		return idRol;
+	}
+	public void setIdRol(Long idRol) {
+		this.idRol = idRol;
+	}
+	public String getNombreRol() {
+		return nombreRol;
+	}
+	public void setNombreRol(String nombreRol) {
+		this.nombreRol = nombreRol;
 	}
 
 }

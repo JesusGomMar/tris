@@ -23,4 +23,11 @@ public class LoginResources {
 	public List<UsuarioDto> findAll(){		
 		return usuariosMapper.findAll();
 	}
+	
+	public UsuarioDto usuarioLogin(UsuarioDto dto){	
+		
+		return usuariosMapper.usuarioLogin(dto);
+	}
+	
+	
 }
