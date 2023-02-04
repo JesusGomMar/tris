@@ -1,0 +1,21 @@
+@charset "ISO-8859-1";
+
+body {
+	background-image: url('/resources/img/error.png');
+	height: 100%;
+	background-size: cover;
+}
+
+table {
+	background-color: azure;
+}
+
+h1 {
+	color: orange;
+}
+
+table td {
+	vertical-align: top;
+	border: solid 1px #888;
+	padding: 10px;
+}
