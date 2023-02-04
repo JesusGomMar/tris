@@ -1,0 +1,19 @@
+.navbar-nav {
+	flex-direction: row;
+}
+
+.nav-item {
+	margin-right: 20px;
+}
+.navbar li:hover {
+  background-color: #4398d7;
+}
+#logout {
+	position: absolute;
+	right: 0;
+}
+body {
+	background-image: url('/resources/img/fondo.jpg');
+	height: 100%;
+	background-size: cover;
+}

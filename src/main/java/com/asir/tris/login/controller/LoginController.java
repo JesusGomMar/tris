@@ -2,7 +2,7 @@ package com.asir.tris.login.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
@@ -16,30 +16,31 @@ public class LoginController {
     LoginService service;
 
     @GetMapping(value="/")
-    public String landing(ModelMap model){
+    public String landing(Model model){
         return showLoginPage(model);
     }
 
     @GetMapping(value="/login")
-    public String showLoginPage(ModelMap model){
+    public String showLoginPage(Model model){
         return "login";
     }
 
     @PostMapping(value="/login")
-    public String showWelcomePage(ModelMap model, UsuarioDto dto){
+    public String showWelcomePage(Model model, UsuarioDto dto){
 
 		if (service.validarUsuario(dto)) {
 			//password y usuario correcto
+			model.addAttribute("login", dto.getLogin());
 			return "menu";
 		} else {
 			// Usuario/password incorrecto
-			model.put("errorMessage", "Usuario/password incorrecto");
+			model.addAttribute("errorMessage", "Usuario/password incorrecto");
 			return "login";
 		}
     }
     
     @GetMapping(value="/menu")
-    public String menu(ModelMap model, UsuarioDto dto){
+    public String menu(Model model, UsuarioDto dto){
     	
     	return "menu";
     }
