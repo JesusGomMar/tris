@@ -16,10 +16,10 @@ public class UsuarioDto {
 	private Long idRol;
 	private String nombreRol;
 	
-	public Long getIdUsuarios() {
+	public Long getIdUsuario() {
 		return idUsuario;
 	}
-	public void setIdUsuarios(Long idUsuario) {
+	public void setIdUsuario(Long idUsuario) {
 		this.idUsuario = idUsuario;
 	}
 	public String getNombre() {

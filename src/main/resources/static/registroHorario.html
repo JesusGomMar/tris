@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="ISO-8859-1">
-<!-- Required meta tags -->
+<meta charset="ISO-8859-1"><!-- Required meta tags -->
 <meta charset="utf-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -25,15 +24,27 @@
 	src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
 	integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 	crossorigin="anonymous"></script>
-<title>TRIS Menu</title>
+	
+<script type="text/javascript" src="registroHorario.js"/>
+<title>Registro horario</title>
 </head>
 <body>
-<h1>Menu</h1>
-<a href="http://localhost:8080/underConstruction.html">Administración usuarios</a><br>
-<a href="http://localhost:8080/underConstruction.html">Administración calendario laboral</a><br>
-<a href="http://localhost:8080/underConstruction.html">Administración Informes</a><br>
-<a href="http://localhost:8080/registroHorarioController/cargaInicial">Registro horario</a><br>
-<a href="http://localhost:8080/underConstruction.html">Justificantes</a><br>
-<a href="http://localhost:8080/">Logout</a><br>
+<table id="grid-basic" class="table table-condensed table-hover table-striped">
+    <thead>
+        <tr>
+            <th data-column-id="id" data-type="numeric">ID</th>
+            <th data-column-id="sender">Sender</th>
+            <th data-column-id="received" data-order="desc">Received</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>10238</td>
+            <td>eduardo@pingpong.com</td>
+            <td>14.10.2013</td>
+        </tr>
+        ...
+    </tbody>
+</table>
 </body>
 </html>
