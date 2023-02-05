@@ -54,7 +54,7 @@ $(function() {
 			},
 			{
 				id: 1,
-				name: 'Fiesta Epifania del Señor',
+				name: 'Fiesta Epifania del Se&ntilde;or',
 				location: 'Castilla y Leon',
 				startDate: new Date(currentYear, 0, 6),
 				endDate: new Date(currentYear, 0, 6)
