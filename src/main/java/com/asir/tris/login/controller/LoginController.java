@@ -27,9 +27,13 @@ public class LoginController {
 
     @PostMapping(value="/login")
     public String showWelcomePage(Model model, UsuarioDto dto){
-
-		if (service.validarUsuario(dto)) {
+    	UsuarioDto usuario = service.usuarioLogin(dto);
+		if (service.validarUsuario(dto, usuario)) {
 			//password y usuario correcto
+			StringBuilder sb = new StringBuilder();
+			sb.append('(').append(usuario.getNombre()).append(' ')
+				.append(usuario.getApellidos()).append(')');
+			model.addAttribute("nombreCompleto",sb.toString().toUpperCase());
 			model.addAttribute("login", dto.getLogin());
 			return "menu";
 		} else {

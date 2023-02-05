@@ -12,9 +12,8 @@ public class LoginService {
 	@Autowired
 	LoginDao loginDao;
 	
-	public boolean validarUsuario(UsuarioDto dto){	
+	public boolean validarUsuario(UsuarioDto dto, UsuarioDto usuario){	
 		boolean flag = false;
-		UsuarioDto usuario = loginDao.usuarioLogin(dto);
 		if (null != usuario && validarPass(dto, usuario)) {
 			flag= true;
 		}
@@ -23,6 +22,10 @@ public class LoginService {
 
 	private boolean validarPass(UsuarioDto dto, UsuarioDto usuario) {
 		return dto.getPassword().equals(usuario.getPassword());
+	}
+
+	public UsuarioDto usuarioLogin(UsuarioDto dto) {
+		return loginDao.usuarioLogin(dto);
 	}
 
 }

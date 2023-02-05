@@ -15,8 +15,8 @@
 	crossorigin="anonymous">
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+<script src="https://code.jquery.com/jquery-3.6.3.js"
+	integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
 	crossorigin="anonymous"></script>
 <script
 	src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
@@ -30,6 +30,7 @@
 <link href="/resources/css/menu.css" rel="stylesheet" type="text/css">
 <script type="text/javascript">
 	var $login = '${login}';
+	var $nombreCompleto = '${nombreCompleto}';
 </script>
 <title>TRIS Menu</title>
 </head>
@@ -38,52 +39,45 @@
 		<div id="navbarText">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item">
-					<div >
+					<div>
 						<a class="nav-link"
 							href="http://localhost:8080/underConstruction/cargaInicial">Administración
 							usuarios</a>
 					</div>
 				</li>
 				<li class="nav-item">
-					<div >
+					<div>
 						<a class="nav-link"
 							href="http://localhost:8080/underConstruction/cargaInicial">Administración
 							calendario laboral</a>
 					</div>
 				</li>
 				<li class="nav-item">
-					<div >
+					<div>
 						<a class="nav-link"
 							href="http://localhost:8080/underConstruction/cargaInicial">Administración
 							Informes</a>
 					</div>
 				</li>
 				<li class="nav-item">
-					<div >
-						<a class="nav-link"
-							href="http://localhost:8080/registroHorario/cargaInicial">Registro
-							horario</a>
+					<div>
+						<a class="nav-link" id="regHorario">Registro horario</a>
 					</div>
 				</li>
 				<li class="nav-item">
-					<div >
-						<a class="nav-link"
+					<div>
+						<a class="nav-link" 
 							href="http://localhost:8080/underConstruction/cargaInicial">Justificantes</a>
 					</div>
 				</li>
-				<li class="nav-item" id= "logout">
-					<div >
-						<a class="nav-link" href="http://localhost:8080/">Logout</a>
+				<li class="nav-item" id="logout">
+					<div>
+						<a class="nav-link" href="http://localhost:8080/">${nombreCompleto}
+							Logout</a>
 					</div>
 				</li>
 			</ul>
 		</div>
 	</nav>
-
-
-
-
-
-
 </body>
 </html>
