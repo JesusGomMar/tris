@@ -12,15 +12,14 @@ import com.asir.tris.comunes.dto.UsuarioDto;
 @RequestMapping(path = "/registroHorario")
 public class RegistroHorarioController {
 
-	
-    @GetMapping(value="/cargaInicial")
-    public String cargaInicial(Model model, @ModelAttribute UsuarioDto dto){
-		if (null == dto.getLogin() || dto.getLogin().isEmpty() ) {
+	@GetMapping(value = "/cargaInicial")
+	public String cargaInicial(Model model, @ModelAttribute UsuarioDto dto) {
+		if (null == dto || null == dto.getLogin() || dto.getLogin().isEmpty()) {
 			model.addAttribute("errorMessage", "Usuario/password incorrecto");
 			return "login";
 		}
-		model.addAttribute("nombreCompleto",dto.getNombre());
+		model.addAttribute("nombreCompleto", dto.getNombre());
 		model.addAttribute("login", dto.getLogin());
-        return "registroHorario";
-    }
+		return "registroHorario";
+	}
 }

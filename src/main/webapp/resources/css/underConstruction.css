@@ -8,7 +8,7 @@ body {
     background-position: top;
 }
 
-div {
+.underConstructionDiv {
 	text-align: center;
 	font-size: x-large;
 }
