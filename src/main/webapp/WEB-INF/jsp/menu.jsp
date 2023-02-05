@@ -79,5 +79,7 @@
 			</ul>
 		</div>
 	</nav>
+	<div id="contenido">
+	</div>
 </body>
 </html>

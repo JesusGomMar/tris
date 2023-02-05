@@ -15,7 +15,7 @@ public class RegistroHorarioController {
 	
     @GetMapping(value="/cargaInicial")
     public String cargaInicial(Model model, @ModelAttribute UsuarioDto dto){
-		if (null == dto.getLogin()) {
+		if (null == dto.getLogin() || dto.getLogin().isEmpty() ) {
 			model.addAttribute("errorMessage", "Usuario/password incorrecto");
 			return "login";
 		}
