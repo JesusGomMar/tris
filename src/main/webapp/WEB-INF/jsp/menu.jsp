@@ -49,14 +49,12 @@
 					<div>
 						<a class="nav-link"
 							href="http://localhost:8080/underConstruction/cargaInicial">Administración
-							calendario laboral</a>
+							Informes</a>
 					</div>
 				</li>
 				<li class="nav-item">
 					<div>
-						<a class="nav-link"
-							href="http://localhost:8080/underConstruction/cargaInicial">Administración
-							Informes</a>
+						<a class="nav-link" id="calLaboral">Calendario laboral</a>
 					</div>
 				</li>
 				<li class="nav-item">
@@ -66,7 +64,7 @@
 				</li>
 				<li class="nav-item">
 					<div>
-						<a class="nav-link" 
+						<a class="nav-link"
 							href="http://localhost:8080/underConstruction/cargaInicial">Justificantes</a>
 					</div>
 				</li>
@@ -79,7 +77,6 @@
 			</ul>
 		</div>
 	</nav>
-	<div id="contenido">
-	</div>
+	<div id="contenido"></div>
 </body>
 </html>
