@@ -64,7 +64,7 @@ $(function() {
 				name: 'Periodo de Semana Santa',
 				location: 'Nacional',
 				startDate: new Date(currentYear, 3, 6),
-				endDate: new Date(currentYear, 3, 9)
+				endDate: new Date(currentYear, 3, 7)
 			},
 			{
 				id: 3,

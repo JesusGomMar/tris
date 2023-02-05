@@ -39,10 +39,10 @@
 
 	<form name='loginForm' action="/login" method='POST'>
 		<div class="container">
-			<label for="login"><b>User</b></label> <input type="text"
-				placeholder="Enter Username" name="login" required> <label
-				for="password"><b>Password</b></label> <input type="password"
-				placeholder="Enter Password" name="password" required>
+			<label for="login"><b>Usuario</b></label> <input type="text"
+				placeholder="Usuario" name="login" required> <label
+				for="password"><b>Contraseña</b></label> <input type="password"
+				placeholder="Contraseña" name="password" required>
 
 			<button type="submit">Login</button>
 		</div>
