@@ -1,0 +1,56 @@
+@charset "ISO-8859-1";
+
+.bgimg {
+	background-image: url('/resources/img/fondoLogin.jpg');
+	height: 100%;
+	background-size: cover;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #1565ad;
+}
+
+h1 {
+	text-align: center;
+}
+
+input[type=text], input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0px;
+	display: inline-block;
+	border: 1px solid #417aad;
+	box-sizing: border-box;
+}
+
+button {
+	background-color: #417aad;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+.container {
+	padding: 16px;
+}
+
+.error {
+	color: red;
+}
+
+.imgcontainer {
+	text-align: center;
+	margin: 24px 0 12px 0;
+}
+
+img.logo {
+	width: 15%;
+}

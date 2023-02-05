@@ -1,0 +1,18 @@
+@charset "ISO-8859-1";
+
+body {
+    background-image: url(/resources/img/Pagina_en_construccion.jpg);
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-color: #00b2c6;
+    background-position: top;
+}
+
+div {
+	text-align: center;
+	font-size: x-large;
+}
+h1 {
+	color: orange;
+}
+
