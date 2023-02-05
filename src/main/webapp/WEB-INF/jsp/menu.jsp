@@ -40,15 +40,13 @@
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item">
 					<div>
-						<a class="nav-link"
-							href="http://localhost:8080/underConstruction/cargaInicial">Administración
+						<a class="nav-link" id="admUsuarios">Administración
 							usuarios</a>
 					</div>
 				</li>
 				<li class="nav-item">
 					<div>
-						<a class="nav-link"
-							href="http://localhost:8080/underConstruction/cargaInicial">Administración
+						<a class="nav-link" id="admInformes">Administración
 							Informes</a>
 					</div>
 				</li>
@@ -64,8 +62,7 @@
 				</li>
 				<li class="nav-item">
 					<div>
-						<a class="nav-link"
-							href="http://localhost:8080/underConstruction/cargaInicial">Justificantes</a>
+						<a class="nav-link" id="justificantes">Justificantes</a>
 					</div>
 				</li>
 				<li class="nav-item" id="logout">

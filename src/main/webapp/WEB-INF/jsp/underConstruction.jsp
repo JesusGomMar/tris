@@ -4,14 +4,14 @@
 <html lang="es">
 <head>
 <meta charset="ISO-8859-1">
+<jsp:include page="menu.jsp"></jsp:include>
 <link href="/resources/css/underConstruction.css" rel="stylesheet"
 	type="text/css">
 <title>En construcción</title>
 </head>
 <body>
-	<div>
+	<div class="underConstructionDiv">
 		<h1>En construcción</h1>
-		<a href="http://localhost:8080/menu">Menu</a>
 	</div>
 </body>
 </html>
