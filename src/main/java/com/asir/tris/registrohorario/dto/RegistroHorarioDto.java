@@ -19,6 +19,7 @@ public class RegistroHorarioDto {
 	private Long tiempo;
 	private String comentarios;
 	private Date fecha;
+	private String fechast;
 	
 	
 	public Long getIdProyecto() {
@@ -110,6 +111,12 @@ public class RegistroHorarioDto {
 	}
 	public void setFecha(Date fecha) {
 		this.fecha = fecha;
+	}
+	public String getFechast() {
+		return fechast;
+	}
+	public void setFechast(String fechast) {
+		this.fechast = fechast;
 	}
 	
 	

@@ -10,6 +10,7 @@ public class UsuarioDto {
 	private String mail;
 	private Long activo;
 	private Date fechaAlta;
+	private String fechaAltaSt;
 	private Date fechaBaja;
 	private String login;
 	private String password;
@@ -81,6 +82,12 @@ public class UsuarioDto {
 	}
 	public void setNombreRol(String nombreRol) {
 		this.nombreRol = nombreRol;
+	}
+	public String getFechaAltaSt() {
+		return fechaAltaSt;
+	}
+	public void setFechaAltaSt(String fechaAltaSt) {
+		this.fechaAltaSt = fechaAltaSt;
 	}
 
 }

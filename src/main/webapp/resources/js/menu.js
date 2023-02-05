@@ -8,7 +8,7 @@ $(function() {
 			$login + "&nombre=" + $nombreCompleto);
 	});
 	$('#admUsuarios').click(function() {
-		window.location.replace("http://localhost:8080/underConstruction/cargaInicial?login=" +
+		window.location.replace("http://localhost:8080/admUsuario/cargaInicial?login=" +
 			$login + "&nombre=" + $nombreCompleto);
 	});
 	$('#admInformes').click(function() {

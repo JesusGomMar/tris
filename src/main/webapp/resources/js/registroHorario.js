@@ -12,7 +12,7 @@ $(function() {
 					data = res[i];
 					var newRowContent = "<tr><td>" + data.nombreProyecto
 						+ "</td><td>" + data.nombreTarea + "</td><td>" + data.nombreTipoTarea
-						+ "</td><td>" + data.fecha + "</td><td>" + data.tiempo
+						+ "</td><td>" + data.fechast + "</td><td>" + data.tiempo
 						+ "</td><td>" + data.comentarios
 						+ "</td><td><button type='button' id='btnEditarIncurrido' class='btn btn-primary'>Editar</button></td>";
 					$("#tablaIncurridos tbody").append(newRowContent);
